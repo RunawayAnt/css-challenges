@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+article {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 18em;
+  height: 30em;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0px 24px 21px 0px hsl(215, 59%, 6%);
+  -moz-box-shadow: 0px 24px 21px 0px hsl(215, 59%, 6%);
+  box-shadow: 0px 24px 21px 0px hsl(215, 59%, 6%);
+}
+
+.header {
+  height: 18em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-crypto {
+  width: 16em;
+  border-radius: 0.5em;
+}
+
+.header .hover-img {
+  background-color: hwb(178 0% 0% / 0.5);
+  opacity: 0;
+  width: 16em;
+  height: 16em;
+  border-radius: 0.5em;
+  position: absolute;
+  transition: 0.8s ease;
+}
+
+.header .hover-img .icon-view {
+  position: absolute;
+  top: 6.5em;
+  left: 6.5em;
+}
+
+.header:hover .hover-img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.body,
+.footer {
+  color: hsl(0, 0%, 100%);
+  padding: 0 1em;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.body *:not(.title) {
+  margin-top: 0.8em;
+}
+
+.body .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.body .title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.body .description {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.body .details {
+  color: hsl(178, 100%, 50%);
+}
+.body .description,
+.body .date {
+  color: hsl(215, 51%, 70%);
+}
+
+.body .details,
+.body .date {
+  font-weight: 400;
+  font-size: 15px;
+  width: 8.5em;
+  height: 2em;
+}
+
+.body .details *,
+.body .date * {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0;
+}
+
+.body .date {
+  text-align: end;
+}
+
+.footer {
+  height: 4em;
+  align-items: center;
+}
+
+.footer p {
+  width: 19em;
+  padding: 1em 0;
+  border-top: 0.5px solid hsl(215, 32%, 27%);
+  font-weight: 300;
+  font-size: 13.5px;
+  color: hsl(215, 51%, 70%);
+}
+
+.footer p span {
+  color: hsl(0, 0%, 100%);
+}
+
+.footer p span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
