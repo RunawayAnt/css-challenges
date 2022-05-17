@@ -1,0 +1,162 @@
+:root {
+  --black: #151515;
+  --white: #f6f7f8;
+  --green: #459963;
+  --green-off: #3c8355;
+}
+
+* {
+  font-family: 'Inconsolata', monospace;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100vw;
+  margin: 3em 0;
+  text-align: center;
+  box-sizing: border-box;
+  color: var(--white);
+}
+
+
+header h1 {
+  font-family: 'BIZ UDPGothic', sans-serif;
+  font-size: 3em;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  /* flex-box */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+article {
+  width: 40vw;
+  border-radius: 0.5em;
+  padding: 1em;
+  -webkit-box-shadow: -1px 3px 15px -4px rgba(19, 19, 22, 1);
+  -moz-box-shadow: -1px 3px 15px -4px rgba(19, 19, 22, 1);
+  box-shadow: -1px 3px 15px -4px rgba(19, 19, 22, 1);
+}
+
+.bar-view{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: 1.5em;
+  margin-bottom: 1.2em;
+}
+
+.btn{
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  margin-right: .4em;
+}
+
+.bg-red   {background-color: rgb(220, 27, 27);}
+.bg-green {background-color: rgb(23, 199, 23);}
+.bg-yellow{background-color: rgb(227, 227, 9);}
+
+.bg-gradient {
+  background: #6a3093; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a044ff,
+    #6a3093
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a044ff,
+    #6a3093
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-attachment: fixed;
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.path {
+  color: var(--white);
+  font-size: large;
+}
+
+.tree,
+.tree ul,
+.tree li {
+  position: relative;
+}
+
+.tree {
+  margin-left: 1em;
+}
+
+.tree ul {
+  list-style: none;
+  margin-top: 0;
+}
+
+.tree li::before,
+.tree li::after {
+  content: " ";
+  position: absolute;
+  left: -1.5em;
+}
+
+.tree li::before {
+  border-top: 0.1em solid var(--white);
+  top: 0.5em;
+  width: 1.2em;
+}
+
+.tree li::after {
+  border-left: 0.1em solid var(--white);
+  height: 100%;
+  top: 0;
+}
+
+.tree ul > li:last-child::after {
+  height: 0.5em;
+}
+
+li {
+  color: rgb(255, 255, 255);
+}
+
+li,
+a {
+  font-size: large;
+  font-weight: 400;
+}
+
+a {
+  color: rgb(0, 148, 12);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(18, 199, 33);
+}
+
+@media (max-width: 370px)  {
+    article {
+        width: 80vw;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+      }
+}
