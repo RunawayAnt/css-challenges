@@ -1,11 +1,13 @@
 :root {
   --black: #151515;
   --white: #f6f7f8;
-  --red: #dc1b1b;
-  --green: #17c717;
-  --yellow: #e3e309;
+  --red: #d92b2b;
+  --green: #31d931;
+  --yellow: #e2e22a;
   --blue: #1e3ada;
   --blue-opacity-75: rgba(30, 58, 220, 0.75);
+  --purple: rgb(193, 30, 218);
+  --purple-opacity-75: rgba(193, 30, 218, 0.75);
 }
 
 .btn-back {

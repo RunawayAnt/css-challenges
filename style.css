@@ -7,22 +7,10 @@ body {
   margin: 0;
 }
 
-header {
-  width: 100vw;
-  margin: 3em 0;
-  text-align: center;
-  box-sizing: border-box;
-  color: var(--white);
-}
-
-header h1 {
-  font-family: "BIZ UDPGothic", sans-serif;
-  font-size: 3em;
-}
-
 section {
   width: 100%;
   height: auto;
+  margin-top: 8em;
   /* flex-box */
   display: flex;
   flex-direction: row;
@@ -94,7 +82,7 @@ article {
 }
 
 .tree {
-  margin-left: 1em;
+  /* margin-left: 1em; */
 }
 
 .tree ul {
@@ -136,12 +124,12 @@ a {
 }
 
 a {
-  color: var(--blue-opacity-75);
+  color: var(--purple-opacity-75);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--blue);
+  color: var(--purple);
 }
 
 @media (max-width: 370px) {
