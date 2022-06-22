@@ -56,14 +56,16 @@ article {
 }
 
 .bg-gradient {
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
-  background-attachment: fixed;
+  background: linear-gradient(270deg, #f7c914, #bf08df);
+  background-size: 300% 300%;
+
+  animation: AnimationName 10s ease infinite;
+}
+
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 .bg-black {
@@ -72,12 +74,12 @@ article {
 
 .path {
   color: var(--white);
-  font-size: large;
+  font-size: clamp(.9rem, 1.2vw, 2rem);
 }
 
 .tree,
 .tree ul,
-.tree li {  
+.tree li {
   position: relative;
 }
 
@@ -119,7 +121,7 @@ li {
 
 li,
 a {
-  font-size: large;
+  font-size: clamp(.9rem, 1.2vw, 2rem);
   font-weight: 400;
 }
 
@@ -141,5 +143,3 @@ a:hover {
     font-size: 2.5em;
   }
 }
-
-
